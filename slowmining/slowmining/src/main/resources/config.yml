@@ -1,0 +1,21 @@
+# Lista bloków, ktore maja byc kopane wolniej.
+# Klucz to nazwa materialu Minecraft (np. DIAMOND_ORE, STONE, OBSIDIAN).
+# "amplifier" to poziom efektu Mining Fatigue:
+#   0 = lekkie spowolnienie
+#   1 = mocniejsze spowolnienie
+#   2 = bardzo wolne kopanie
+#   3+ = ekstremalnie wolne (praktycznie nie da sie skopac recami)
+#
+# Pelna lista nazw materialow: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+
+blocks:
+  DIAMOND_ORE:
+    amplifier: 2
+  OBSIDIAN:
+    amplifier: 3
+  ANCIENT_DEBRIS:
+    amplifier: 2
+
+# Czy efekt ma dzialac tylko gdy gracz nie ma odpowiedniego/ulepszonego narzedzia (np. haste od enchantow itp.)
+# Zostaw "false" jesli chcesz, zeby spowolnienie dzialalo zawsze niezaleznie od narzedzia.
+ignore-if-creative: true

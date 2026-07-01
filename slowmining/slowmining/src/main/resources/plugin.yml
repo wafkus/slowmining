@@ -1,0 +1,15 @@
+name: SlowMining
+version: '1.0.0'
+main: com.example.slowmining.SlowMiningPlugin
+api-version: '1.20'
+author: Ty
+description: Sprawia, ze wybrane bloki koparia sie dluzej.
+commands:
+  slowmining:
+    description: Zarzadzanie wtyczka SlowMining
+    usage: /slowmining reload
+    permission: slowmining.admin
+permissions:
+  slowmining.admin:
+    description: Pozwala przeladowac konfiguracje wtyczki
+    default: op
